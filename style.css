@@ -1,0 +1,72 @@
+:root {
+  --primary: #6b0cf0;
+
+  --shadow-10: 1px 2px 9px 5px rgba(51, 51, 51, 0.2);
+  --shadow-90: 1px 2px 9px 5px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header {
+  height: 5.5rem;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 9;
+}
+
+.header-left.header-icon {
+  padding-left: 2rem;
+  height: 3rem;
+  transition: 0.3s;
+}
+.header-left.header-icon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.header-left.header-title {
+  padding: 0 2rem;
+  color: var(--primary);
+
+  .header-right.header-right-icons {
+    margin-right: 2rem;
+  }
+
+  i {
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: var(--primary);
+    transition: 0.3s;
+  }
+  i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .sidemenu {
+    grid-area: 2 / 1 / 9 / 3;
+    border: 1px solid black;
+  }
+  .main {
+    grid-area: 2 / 3 / 9 / 9;
+    border: 1px solid black;
+  }
+}
