@@ -75,6 +75,7 @@ body {
 .sidemenu {
   grid-area: 2 / 1 / 9 / 3;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .sidemenu.getting-started {
@@ -101,7 +102,6 @@ body {
   background-color: var(--bg-color);
   font-size: 1.1rem;
   padding-left: 0.6rem;
-  font-weight: 700;
 }
 .getting-started.usage:active {
   cursor: pointer;
@@ -125,7 +125,7 @@ body {
 .sidemenu.components p:hover {
   cursor: pointer;
   color: var(--primary);
-  background-color: wh;
+  background-color: var(--bg-color);
   font-size: 1.1rem;
   padding-left: 0.6rem;
 }
@@ -133,6 +133,8 @@ body {
 .main {
   grid-area: 2 / 3 / 9 / 9;
 }
+
+/* home page start */
 
 .main-index {
   height: 70%;
@@ -196,3 +198,40 @@ body {
 .main-index-page {
   grid-area: 2 / 1 / 9 / 9;
 }
+/* home page end */
+
+/* Usage page starts */
+
+.usage {
+  font: inherit;
+  margin-right: 2rem;
+}
+
+.usage-heading {
+  color: var(--primary);
+  padding: 2.5rem 0;
+}
+
+.usage p {
+  color: var(--secondary);
+  font-size: 1.2 rem;
+}
+
+.usage-next {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  color: var(--primary);
+  transition: 0.3s;
+}
+.usage-next:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* Usage page ends */
+
+/* components page starts */
+
+/* componenents page ends */
