@@ -2,6 +2,7 @@
   --primary: #6b0cf0;
   --secondary: #8d99ae;
   --bg-color: #caf0f8;
+  --bg-color-white: #ffffff;
   --gradient: linear-gradient(#ade8f4, #0096c7);
 
   --shadow-10: 1px 2px 9px 5px rgba(51, 51, 51, 0.2);
@@ -74,6 +75,7 @@ body {
 .sidemenu {
   grid-area: 2 / 1 / 9 / 3;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .sidemenu.getting-started {
@@ -100,7 +102,6 @@ body {
   background-color: var(--bg-color);
   font-size: 1.1rem;
   padding-left: 0.6rem;
-  font-weight: 700;
 }
 .getting-started.usage:active {
   cursor: pointer;
@@ -132,3 +133,105 @@ body {
 .main {
   grid-area: 2 / 3 / 9 / 9;
 }
+
+/* home page start */
+
+.main-index {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-index-image img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.main-index-text {
+  width: 35rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.main-index-text p {
+  text-align: center;
+}
+
+.main-index-get-started-button {
+  font-size: 1.1rem;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--primary);
+  color: var(--bg-color-white);
+  margin: 0 1rem;
+  transition: 0.3s;
+}
+.main-index-get-started-button:hover {
+  background-color: var(--bg-color-white);
+  color: var(--primary);
+  border: 0.2rem solid var(--primary);
+  cursor: pointer;
+}
+
+.main-index-documentation-button {
+  font-size: 1.1rem;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--bg-color-white);
+  color: var(--primary);
+  border: 0.2rem solid var(--primary);
+  margin: 0 1rem;
+  transition: 0.3s;
+}
+.main-index-documentation-button:hover {
+  background-color: var(--primary);
+  color: var(--bg-color-white);
+  cursor: pointer;
+}
+
+.main-index-page {
+  grid-area: 2 / 1 / 9 / 9;
+}
+/* home page end */
+
+/* Usage page starts */
+
+.usage {
+  font: inherit;
+  margin-right: 2rem;
+}
+
+.usage-heading {
+  color: var(--primary);
+  padding: 2.5rem 0;
+}
+
+.usage p {
+  color: var(--secondary);
+  font-size: 1.2 rem;
+}
+
+.usage-next {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  color: var(--primary);
+  transition: 0.3s;
+}
+.usage-next:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* Usage page ends */
+
+/* components page starts */
+
+/* componenents page ends */
