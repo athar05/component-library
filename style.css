@@ -3,7 +3,8 @@
   --secondary: #8d99ae;
   --bg-color: #caf0f8;
   --bg-color-white: #ffffff;
-  --gradient: linear-gradient(#ade8f4, #0096c7);
+  --icon-bg: orangered;
+  --p-color: black;
 
   --shadow-10: 1px 2px 9px 5px rgba(51, 51, 51, 0.2);
   --shadow-90: 1px 2px 9px 5px rgba(0, 0, 0, 0.2);
@@ -22,7 +23,7 @@ body {
 .parent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: 85px 1fr 1fr 1fr 1fr 1fr 1fr 85px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -108,6 +109,7 @@ body {
   color: black;
   background-color: var(--bg-color);
 }
+
 .components.heading {
   padding-bottom: 1rem;
   color: var(--secondary);
@@ -132,6 +134,24 @@ body {
 
 .main {
   grid-area: 2 / 3 / 9 / 9;
+
+  margin-top: 2rem;
+  width: 60rem;
+}
+
+.main p {
+  color: var(--p-color);
+  font-size: 1.3 rem;
+  margin-top: 1rem;
+}
+
+.main h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
 }
 
 /* home page start */
@@ -222,16 +242,152 @@ body {
   display: flex;
   justify-content: flex-end;
   font-size: 1.3rem;
+  text-decoration: none;
   color: var(--primary);
   transition: 0.3s;
 }
 .usage-next:hover {
   cursor: pointer;
   opacity: 0.7;
+  text-decoration: none;
 }
 
 /* Usage page ends */
 
 /* components page starts */
+
+/* avatar page starts */
+
+.standard-avatar-section {
+  font: inherit;
+  margin-bottom: 2rem;
+}
+
+.standard-avatar-heading {
+  margin: 0.5rem 0;
+}
+
+.highlight-text {
+  background-color: var(--bg-color);
+  font-size: 1.3rem;
+}
+
+.avatar {
+  margin: 0 0.3rem;
+  position: relative;
+}
+
+.standard-avatar-images {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.avatar.avatar-xl > img {
+  height: 5rem;
+
+  border-radius: 50%;
+}
+
+.avatar.avatar-lg > img {
+  height: 4rem;
+  margin: 0 0.5rem;
+}
+
+.avatar.avatar-md > img {
+  height: 3rem;
+}
+
+.avatar.avatar-sm > img {
+  height: 2rem;
+}
+
+.avatar.avatar-xs > img {
+  width: 1rem;
+  height: 1 rem;
+}
+
+/* avatar page ends */
+
+/* badge section starts */
+.badge-section {
+  font: inherit;
+}
+
+.badges-avatar-images {
+  margin: 2rem 0;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+.badge-count {
+  background-color: var(--icon-bg);
+  color: white;
+  height: 1.2rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.avatar > .badge-count.badge-near {
+  bottom: 0.2rem;
+  right: 0.1rem;
+}
+.avatar > .badge-count.badge-normal {
+  bottom: 0.2rem;
+  right: 0.7rem;
+}
+.avatar > .badge-count.badge-far {
+  bottom: 0.2rem;
+  right: 0.6rem;
+}
+
+.badges-icon-section {
+  margin: 2rem 0;
+}
+
+.badges-icon-images {
+  margin: 2rem 0;
+  background-color: var(--bg-color);
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.icon {
+  position: relative;
+  font-size: 2.3rem;
+  margin: 0.5rem 1.5rem;
+
+  width: 3rem;
+  height: 4rem;
+  padding-top: 0.5rem;
+}
+
+.icon-cart > .badge-count {
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+}
+
+.icon-wishlist > .badge-count {
+  top: 0;
+  right: 0.6rem;
+  font-size: 1rem;
+}
+
+.icon-notification > .badge-count {
+  top: 0.2rem;
+  right: 0.7rem;
+  font-size: 1rem;
+}
+
+/* badge section ends */
 
 /* componenents page ends */
