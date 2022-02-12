@@ -277,10 +277,6 @@ h6 {
 
 /* alert section begins */
 
-.alert-section {
-  font: inherit;
-}
-
 .alert-components {
   display: flex;
   flex-direction: column;
@@ -316,10 +312,6 @@ h6 {
 /* alert section ends */
 
 /* button section starts  */
-
-.button-section {
-  font: inherit;
-}
 
 .solid-button-components {
   display: flex;
@@ -357,10 +349,6 @@ h6 {
 
 .button-link a:link {
   text-decoration: none;
-}
-
-.button-with-icon-section {
-  font: inherit;
 }
 
 .icon-button-compenents {
@@ -410,15 +398,6 @@ h6 {
 
 /* avatar page starts */
 
-.standard-avatar-section {
-  font: inherit;
-  margin-bottom: 2rem;
-}
-
-.standard-avatar-heading {
-  margin: 0.5rem 0;
-}
-
 .highlight-text {
   background-color: var(--bg-color);
   font-size: 1.3rem;
@@ -464,9 +443,6 @@ h6 {
 /* avatar page ends */
 
 /* badge section starts */
-.badge-section {
-  font: inherit;
-}
 
 .badges-avatar-images {
   margin: 2rem 0;
@@ -499,10 +475,6 @@ h6 {
 .avatar > .badge-count.badge-far {
   bottom: 0.2rem;
   right: 0.6rem;
-}
-
-.badges-icon-section {
-  margin: 2rem 0;
 }
 
 .badges-icon-images {
