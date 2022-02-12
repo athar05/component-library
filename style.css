@@ -74,13 +74,12 @@ body {
 }
 
 .sidemenu {
+  padding: 0.5rem 0.5rem;
   grid-area: 2 / 1 / 9 / 3;
-  margin-left: 1rem;
-  margin-top: 1rem;
 }
 
 .sidemenu.getting-started {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .getting-started.heading {
@@ -134,7 +133,6 @@ body {
 
 .main {
   grid-area: 2 / 3 / 9 / 9;
-  margin-top: 2rem;
   width: 60rem;
 }
 
@@ -254,6 +252,28 @@ h6 {
 /* Usage page ends */
 
 /* components page starts */
+
+/* common styles for sections and section headings */
+.section {
+  padding: 0.5rem 0.5rem;
+}
+.sub-section {
+  padding: 0.25rem 0rem;
+}
+
+.section .section-heading {
+  font-weight: 700;
+  /* font-size: 2.75rem; */
+  /* line-height: 3.25rem; */
+  padding: 0.5rem 0rem;
+}
+
+.section .section-sub-heading {
+  font-weight: 300;
+  /* font-size: 2rem; */
+  /* line-height: 2.75rem; */
+  padding: 0.5rem 0rem;
+}
 
 /* alert section begins */
 
