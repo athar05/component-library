@@ -1,73 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minimal UI</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimal UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 
-    <link rel="stylesheet" href="./prism/prism.css">
+  <link rel="stylesheet" href="./prism/prism.css">
 
 
 
-  </head>
-  <body>
+</head>
 
-      <div class="parent">
-        <div class="header">
-          <div class="header header-left">
-            <img src="./images/Minimal UI Icon.png" class="header-left header-icon"></img>
+<body>
 
-            <h2  class="header-left header-title">Minimal.UI</h2>
-          </div>
+  <div class="parent">
+    <div class="header">
+      <div class="header header-left">
+        <img src="./images/Minimal UI Icon.png" class="header-left header-icon"></img>
 
-          <div class="header header-right">
-
-            <div class="header-right header-right-icons">
-              <i class="fab fa-github-square"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-instagram"></i>
-
-            </div>
-          </div>
-          </div>
-
-        <div class="sidemenu">
-        <div class="sidemenu getting-started">
-
-          <h3 class="getting-started heading">Getting Started</h3>
-          <p class="getting-started usage">Usage</p>
-        </div>
-          <div class="sidemenu components">
-<h3 class=" components heading">Components</h3>
-            <p class =" components avatar">Avatar</p>
-            <p class =" components alert">Alert</p>
-            <p class =" components badge">Badge</p>
-            <p class =" components button">Button</p>
-            <p class =" components card">Card</p>
-            <p class =" components image">Image</p>
-            <p class =" components input">Input</p>
-            <p class =" components list">List</p>
-            <p class =" components nav">Navigation</p>
-            <p class =" components toast">Toast</p>
-          </div>
-
-
-        </div>
-        <div class="main">
-
-
-          </div>
+        <h2 class="header-left header-title">Minimal.UI</h2>
       </div>
-<script src="./prism/prism.js"></script>
-<script src="https://kit.fontawesome.com/6f5378765c.js" crossorigin="anonymous"></script>
 
-  </body>
+      <div class="header header-right">
+
+        <div class="header-right header-right-icons">
+          <i class="fab fa-github-square"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sidemenu">
+      <div class="sidemenu getting-started">
+
+        <h3 class="getting-started heading">Getting Started</h3>
+        <p class="getting-started usage">Usage</p>
+      </div>
+      <div class="sidemenu components">
+        <h3 class=" components-heading">Components</h3>
+        <p class=" components-avatar">Avatar</p>
+        <p class=" components-alert">Alert</p>
+        <p class=" components-badge">Badge</p>
+        <p class=" components-button">Button</p>
+        <p class=" components-card">Card</p>
+        <p class=" components-image">Image</p>
+        <p class=" components-input">Input</p>
+        <p class=" components-list">List</p>
+        <p class=" components-nav">Navigation</p>
+        <p class=" components-toast">Toast</p>
+      </div>
+
+
+    </div>
+    <div class="main">
+      <div class="alert-section">
+
+        <h2>Standard Alerts</h2>
+        <p>The alert component has four variants <span class="highlight-text">alert-success</span>, <span
+            class="highlight-text"> alert-danger</span>,
+          <span class="highlight-text">alert-warning</span> & <span class="highlight-text"> alert-info</span>
+        </p>
+
+        <div class="alert-components">
+
+          <div class="alert alert-success">This is success alert</div>
+          <div class="alert alert-danger">This is danger alert</div>
+          <div class="alert alert-warning">This is warning alert</div>
+          <div class="alert alert-info">This is info alert</div>
+        </div>
+        <pre> <code class="language-html">
+          &lt;div class="alert alert-success">This is success alert&lt;/div>
+          &lt;div class="alert alert-danger">This is danger alert&lt;/div>
+          &lt;div class="alert alert-warning">This is warning alert&lt;/div>
+          &lt;div class="alert alert-info">This is info alert&lt;/div>
+        </code></pre>
+      </div>
+
+      <div class="button-section">
+
+        <div class="solid-button-section">
+
+          <h2> Buttons</h2>
+          <h3>Solid buttons</h3>
+          <p>The solid button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+
+          <div class="solid-button-components">
+
+            <div class="button button-primary">Primary</div>
+            <div class="button button-secondary">Secondary</div>
+            <div class="button button-danger">Warning</div>
+          </div>
+          <pre> <code class="language-html">
+          &lt;div class="button button-primary">Primary&lt;/div>
+          &lt;div class="button button-secondary">Secondary&lt;/div>
+          &lt;div class="button button-danger">Warning&lt;/div>
+        </code></pre>
+        </div>
+
+        <div class="link-button-section">
+          <h3> Link Buttons</h3>
+          <p>The solid button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+          <div class="link-button-components">
+
+            <a href="">
+              <div class="button button-primary button-link">
+                <p>Primary</p>
+              </div>
+            </a>
+            <a href="">
+              <div class=" button button-secondary button-link">
+                <p>Secondary</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="button button-danger button-link">
+                <p>Warning</p>
+              </div>
+            </a>
+          </div>
+          <pre> <code class="language-html">
+            &lt;div class="button button-primary button-link">Primary&lt;/div>
+            &lt;div class="button button-secondary button-link">Secondary&lt;/div>
+            &lt;div class="button button-danger button-link">Warning&lt;/div>
+          </code></pre>
+        </div>
+
+        <div class="button-with-icon-section">
+
+          <h3>Buttons With Icons</h3>
+          <p>The solid button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+
+          <div class="icon-button-compenents">
+
+            <div class="button button-icon"><i class="fa-solid fa-cart-plus"></i> <span> Add To Cart</span></div>
+            <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i> <span> Buy Now</span></div>
+
+          </div>
+          <pre> <code class="language-html">
+             &lt;div class="button button-icon"> &lt;img src="...">  &lt;span> Add To Cart &lt;/span> &lt;/div>
+             &lt;div class="button button-icon">  &lt;img src="...">  &lt;span> Buy Now &lt;/span> &lt;/div>
+          </code></pre>
+        </div>
+
+        <div class="floating-action-button-section">
+          <h3>Floating Action Button</h3>
+          <p>The solid button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+          <div class="floating-action-button-component">
+
+            <button class="floating-action-button"> <i class="fa-solid fa-bag-shopping"></i></button>
+
+          </div>
+
+        </div>
+        <pre> <code class="language-html">
+          &lt;div class="floating-action-button-component">
+
+          &lt;button class="fab"> &lt;img src="...">&lt;/button>
+
+            &lt;/div>
+       </code></pre>
+      </div>
+
+    </div>
+  </div>
+  <script src="./prism/prism.js"></script>
+  <script src="https://kit.fontawesome.com/6f5378765c.js" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
