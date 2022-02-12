@@ -1,73 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minimal UI</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimal UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 
-    <link rel="stylesheet" href="./prism/prism.css">
+  <link rel="stylesheet" href="./prism/prism.css">
 
 
 
-  </head>
-  <body>
+</head>
 
-      <div class="parent">
-        <div class="header">
-          <div class="header header-left">
-            <img src="./images/Minimal UI Icon.png" class="header-left header-icon"></img>
+<body>
 
-            <h2  class="header-left header-title">Minimal.UI</h2>
-          </div>
+  <div class="parent">
+    <div class="header">
+      <div class="header header-left">
+        <img src="./images/Minimal UI Icon.png" class="header-left header-icon"></img>
 
-          <div class="header header-right">
-
-            <div class="header-right header-right-icons">
-              <i class="fab fa-github-square"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-instagram"></i>
-
-            </div>
-          </div>
-          </div>
-
-        <div class="sidemenu">
-        <div class="sidemenu getting-started">
-
-          <h3 class="getting-started heading">Getting Started</h3>
-          <p class="getting-started usage">Usage</p>
-        </div>
-          <div class="sidemenu components">
-<h3 class=" components heading">Components</h3>
-            <p class =" components avatar">Avatar</p>
-            <p class =" components alert">Alert</p>
-            <p class =" components badge">Badge</p>
-            <p class =" components button">Button</p>
-            <p class =" components card">Card</p>
-            <p class =" components image">Image</p>
-            <p class =" components input">Input</p>
-            <p class =" components list">List</p>
-            <p class =" components nav">Navigation</p>
-            <p class =" components toast">Toast</p>
-          </div>
-
-
-        </div>
-        <div class="main">
-
-
-          </div>
+        <h2 class="header-left header-title">aqua.ui</h2>
       </div>
-<script src="./prism/prism.js"></script>
-<script src="https://kit.fontawesome.com/6f5378765c.js" crossorigin="anonymous"></script>
 
-  </body>
+      <div class="header header-right">
+
+        <div class="header-right header-right-icons">
+          <a href="https://github.com/athar05"> <i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/athar-shakeel-a8544588/"> <i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/atharo5/"> <i class="fab fa-instagram"></i></a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sidemenu">
+      <div class="sidemenu getting-started">
+
+        <h3 class="getting-started heading">Getting Started</h3>
+        <p class="getting-started usage">Usage</p>
+      </div>
+      <div class="sidemenu components">
+        <h3 class=" components heading">Components</h3>
+        <p class=" components avatar">Avatar</p>
+        <p class=" components alert">Alert</p>
+        <p class=" components badge">Badge</p>
+        <p class=" components button">Button</p>
+        <p class=" components card">Card</p>
+        <p class=" components image">Image</p>
+        <p class=" components input">Input</p>
+        <p class=" components list">List</p>
+        <p class=" components nav">Navigation</p>
+        <p class=" components toast">Toast</p>
+      </div>
+
+
+    </div>
+    <div class="main">
+
+      <div class="standard-avatar-section">
+
+        <h2 class="standard-avatar-heading"> Avatars</h2>
+
+        <p>The avatar component has 5 sizes, <span class="highlight-text">avatar-xl</span> (4em), <span
+            class="highlight-text"> avatar-lg</span> (3em), <span class="highlight-text"> avatar-std </span> (2em) <span
+            class="highlight-text"> avatar-sm </span> (1.5em), and <span class="highlight-text"> avatar-xs </span>
+          (1em).</p>
+
+        <div class="standard-avatar-images">
+
+
+
+
+          <figure class="avatar avatar-xl">
+            <img src="./images/avatar-xl.png" alt="">
+
+          </figure>
+
+          <figure class="avatar avatar-lg">
+            <img src="./images/avatar-lg.png" alt="">
+
+          </figure>
+          <figure class="avatar avatar-md">
+            <img src="./images/avatar-md.png" alt="">
+
+          </figure>
+          <figure class="avatar avatar-sm">
+            <img src="./images/avatar-sm.png" alt="">
+
+          </figure>
+          <figure class="avatar avatar-xs">
+            <img src="./images/avatar-xs.png" alt="">
+
+          </figure>
+        </div>
+
+        <pre> <code class="language-html">
+
+            //extra large avatar
+            &lt;figure class="avatar avatar-xl">
+            &lt;img src="..." alt="">
+            &lt;/figure>
+
+            //large avatar
+            &lt;figure class="avatar avatar-lg">
+              &lt;img src="..." alt="">
+            &lt;/figure>
+
+            //medium avatar
+            &lt;figure class="avatar avatar-md">
+              &lt;img src="..." alt="">
+            &lt;/figure>
+
+            //small avatar
+            &lt;figure class="avatar avatar-sm">
+              &lt;img src="..." alt="">
+            &lt;/figure>
+
+            //extra small avatar
+            &lt;figure class="avatar avatar-xs">
+              &lt;img src="..." alt="">
+            &lt;/figure>
+          </code></pre>
+
+      </div>
+
+      <div class="badge-section">
+
+        <div class="badges-avatar-section">
+
+          <h2>Avatars With Badges</h2>
+          <p>The badge component can be used with and without the count.</p>
+
+
+          <div class="badges-avatar-images">
+
+            <figure class="avatar avatar-xl ">
+              <img src="./images/avatar-xl.png" alt="">
+              <div class="badge-count badge-near">1</div>
+
+            </figure>
+
+            <figure class="avatar avatar-lg ">
+              <img src="./images/avatar-lg.png" alt="">
+              <div class="badge-count badge-normal">1</div>
+
+            </figure>
+            <figure class="avatar avatar-md ">
+              <img src="./images/avatar-md.png" alt="">
+              <div class="badge-count badge-near">1</div>
+
+            </figure>
+          </div>
+
+          <pre> <code class="language-html">
+
+            //big avatar with badge
+            &lt;figure class="avatar avatar-xl ">
+              &lt;img src="..." alt="">
+              &lt;div class="badge-count badge-near">1&lt;/div>
+            &lt;/figure>
+
+            //medium avatar with badge
+            &lt;figure class="avatar avatar-lg ">
+              &lt;img src="..." alt="">
+              &lt;div class="badge-count badge-normal">1&lt;/div>
+            &lt;/figure>
+
+            //small avatar with badge
+            &lt;figure class="avatar avatar-md ">
+              &lt;img src="..." alt="">
+              &lt;div class="badge-count badge-near">1&lt;/div>
+            </code></pre>
+        </div>
+
+        <div class="badges-icon-section">
+
+          <h2>Icons With Badges</h2>
+
+          <p>The icons can be used with and without the badge.
+
+          </p>
+
+
+          <div class="badges-icon-images">
+
+            <figure class="icon icon-cart ">
+
+              <div> <i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="badge-count">1</div>
+
+            </figure>
+
+            <figure class="icon icon-wishlist ">
+              <i class="fa-solid fa-bookmark"></i>
+              <div class="badge-count">1</div>
+
+
+            </figure>
+            <figure class="icon icon-notification ">
+              <i class="fa-solid fa-bell"></i>
+              <div class="badge-count">1</div>
+
+
+          </div>
+          <pre> <code class="language-html">
+              &lt;figure class="icon icon-cart ">
+                &lt;div> &lt;i class="fa-solid fa-cart-shopping">&lt;/i>&lt;/div>
+                  &lt;div class="badge-count">1&lt;/div>
+                &lt;/figure>
+
+                &lt;figure class="icon icon-wishlist ">
+                  &lt;i class="fa-solid fa-bookmark">&lt;/i>
+                  &lt;div class="badge-count">1&lt;/div>
+                &lt;/figure>
+
+                &lt;figure class="icon icon-notification ">
+                  &lt;i class="fa-solid fa-bell">&lt;/i>
+                  &lt;div class="badge-count">1&lt;/div>
+                  &lt;/figure>
+                 </code></pre>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  </div>
+  <script src="./prism/prism.js"></script>
+  <script src="https://kit.fontawesome.com/6f5378765c.js" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
