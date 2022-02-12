@@ -22,7 +22,7 @@ body {
 .parent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 85px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8,1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
