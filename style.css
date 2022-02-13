@@ -5,6 +5,13 @@
   --bg-color-white: #ffffff;
   --icon-bg: orangered;
   --p-color: black;
+  --btn-danger: red;
+  --btn-success: green;
+  --btn-success-lt: #daece4;
+  --alert-success: #d1e7dd;
+  --alert-danger: #f8d7da;
+  --alert-warning: #fff3cd;
+  --alert-info: #cff4fc;
 
   --shadow-10: 1px 2px 9px 5px rgba(51, 51, 51, 0.2);
   --shadow-90: 1px 2px 9px 5px rgba(0, 0, 0, 0.2);
@@ -294,19 +301,19 @@ h6 {
 }
 
 .alert.alert-success {
-  background-color: #d1e7dd;
+  background-color: var(--alert-success);
 }
 
 .alert.alert-danger {
-  background-color: #f8d7da;
+  background-color: var(--alert-danger);
 }
 
 .alert.alert-warning {
-  background-color: #fff3cd;
+  background-color: var(--alert-warning);
 }
 
 .alert.alert-info {
-  background-color: #cff4fc;
+  background-color: var(--alert-info);
 }
 
 /* alert section ends */
@@ -332,15 +339,15 @@ h6 {
 }
 
 .button-primary {
-  background-color: green;
+  background-color: var(--btn-success);
 }
 
 .button-secondary {
-  background-color: #d1e7dd;
+  background-color: var(--btn-success-lt);
 }
 
 .button-danger {
-  background-color: red;
+  background-color: var(--btn-danger);
 }
 
 .link-button-components {
