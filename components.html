@@ -5,17 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minimal UI</title>
+  <title>Aqua UI</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-
   <link rel="stylesheet" href="./prism/prism.css">
-
-
-
 </head>
 
 <body>
@@ -24,6 +19,7 @@
     <div class="header">
       <div class="header header-left">
         <img src="./images/Minimal UI Icon.png" class="header-left header-icon"></img>
+
 
         <h2 class="header-left header-title">aqua.ui</h2>
       </div>
@@ -46,26 +42,28 @@
         <p class="getting-started usage">Usage</p>
       </div>
       <div class="sidemenu components">
-        <h3 class=" components heading">Components</h3>
-        <p class=" components avatar">Avatar</p>
-        <p class=" components alert">Alert</p>
-        <p class=" components badge">Badge</p>
-        <p class=" components button">Button</p>
-        <p class=" components card">Card</p>
-        <p class=" components image">Image</p>
-        <p class=" components input">Input</p>
-        <p class=" components list">List</p>
-        <p class=" components nav">Navigation</p>
-        <p class=" components toast">Toast</p>
+        <h3>Components</h3>
+        <p>Avatar</p>
+        <p>Alert</p>
+        <p>Badge</p>
+        <p>Button</p>
+        <p>Card</p>
+        <p>Image</p>
+        <p>Input</p>
+        <p>List</p>
+        <p>Navigation</p>
+        <p>Toast</p>
       </div>
 
 
     </div>
+
     <div class="main">
 
-      <div class="standard-avatar-section">
+      <!-- START avatar section -->
+      <div class="section">
 
-        <h2 class="standard-avatar-heading"> Avatars</h2>
+        <h2 class="section-heading"> Avatars</h2>
 
         <p>The avatar component has 5 sizes, <span class="highlight-text">avatar-xl</span> (4em), <span
             class="highlight-text"> avatar-lg</span> (3em), <span class="highlight-text"> avatar-std </span> (2em) <span
@@ -73,10 +71,6 @@
           (1em).</p>
 
         <div class="standard-avatar-images">
-
-
-
-
           <figure class="avatar avatar-xl">
             <img src="./images/avatar-xl.png" alt="">
 
@@ -102,39 +96,151 @@
 
         <pre> <code class="language-html">
 
-            //extra large avatar
-            &lt;figure class="avatar avatar-xl">
-            &lt;img src="..." alt="">
-            &lt;/figure>
-
-            //large avatar
-            &lt;figure class="avatar avatar-lg">
+              //extra large avatar
+              &lt;figure class="avatar avatar-xl">
               &lt;img src="..." alt="">
-            &lt;/figure>
+              &lt;/figure>
 
-            //medium avatar
-            &lt;figure class="avatar avatar-md">
-              &lt;img src="..." alt="">
-            &lt;/figure>
+              //large avatar
+              &lt;figure class="avatar avatar-lg">
+                &lt;img src="..." alt="">
+              &lt;/figure>
 
-            //small avatar
-            &lt;figure class="avatar avatar-sm">
-              &lt;img src="..." alt="">
-            &lt;/figure>
+              //medium avatar
+              &lt;figure class="avatar avatar-md">
+                &lt;img src="..." alt="">
+              &lt;/figure>
 
-            //extra small avatar
-            &lt;figure class="avatar avatar-xs">
-              &lt;img src="..." alt="">
-            &lt;/figure>
-          </code></pre>
+              //small avatar
+              &lt;figure class="avatar avatar-sm">
+                &lt;img src="..." alt="">
+              &lt;/figure>
+
+              //extra small avatar
+              &lt;figure class="avatar avatar-xs">
+                &lt;img src="..." alt="">
+              &lt;/figure>
+            </code></pre>
 
       </div>
+      <!-- END avarar section -->
 
-      <div class="badge-section">
+      <!-- START alert section -->
+      <div class="section">
+        <h2 class="section-heading">Standard Alerts</h2>
+        <p>The alert component has four variants <span class="highlight-text">alert-success</span>, <span
+            class="highlight-text"> alert-danger</span>,
+          <span class="highlight-text">alert-warning</span> & <span class="highlight-text"> alert-info</span>
+        </p>
 
-        <div class="badges-avatar-section">
+        <div class="alert-components">
+          <div class="alert alert-success">This is success alert</div>
+          <div class="alert alert-danger">This is danger alert</div>
+          <div class="alert alert-warning">This is warning alert</div>
+          <div class="alert alert-info">This is info alert</div>
+        </div>
+        <pre>
+          <code class="language-html">
+            &lt;div class="alert alert-success"&gt;This is success alert&lt;/div&gt;
+            &lt;div class="alert alert-danger"&gt;This is danger alert&lt;/div&gt;
+            &lt;div class="alert alert-warning"&gt;This is warning alert&lt;/div&gt;
+            &lt;div class="alert alert-info"&gt;This is info alert&lt;/div&gt;
+          </code>
+        </pre>
+      </div>
+      <!-- END altert section -->
 
-          <h2>Avatars With Badges</h2>
+      <!-- START buttons section -->
+      <div class="section">
+        <h2 class="section-heading">Buttons</h2>
+
+        <div class="sub-section">
+
+          <h3 class="section-sub-heading">Solid buttons</h3>
+          <p>The solid button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+
+          <div class="solid-button-components">
+
+            <div class="button button-primary">Primary</div>
+            <div class="button button-secondary">Secondary</div>
+            <div class="button button-danger">Warning</div>
+          </div>
+          <pre> <code class="language-html">
+            &lt;div class="button button-primary">Primary&lt;/div>
+            &lt;div class="button button-secondary">Secondary&lt;/div>
+            &lt;div class="button button-danger">Warning&lt;/div>
+          </code></pre>
+        </div>
+
+        <div class="sub-section">
+          <h3 class="section-sub-heading"> Link Buttons</h3>
+          <p>The link button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+          <div class="link-button-components">
+
+            <a href="">
+              <div class="button button-primary button-link">
+                <p>Primary</p>
+              </div>
+            </a>
+            <a href="">
+              <div class=" button button-secondary button-link">
+                <p>Secondary</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="button button-danger button-link">
+                <p>Warning</p>
+              </div>
+            </a>
+          </div>
+          <pre> <code class="language-html">
+              &lt;div class="button button-primary button-link">Primary&lt;/div>
+              &lt;div class="button button-secondary button-link">Secondary&lt;/div>
+              &lt;div class="button button-danger button-link">Warning&lt;/div>
+            </code></pre>
+        </div>
+
+        <div class="sub-section ">
+
+          <h3 class="section-sub-heading">Buttons With Icons</h3>
+
+
+          <div class="icon-button-compenents">
+
+            <div class="button button-icon"><i class="fa-solid fa-cart-plus"></i> <span> Add To Cart</span></div>
+            <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i> <span> Buy Now</span></div>
+
+          </div>
+          <pre> <code class="language-html">
+              &lt;div class="button button-icon"> &lt;img src="...">  &lt;span> Add To Cart &lt;/span> &lt;/div>
+              &lt;div class="button button-icon">  &lt;img src="...">  &lt;span> Buy Now &lt;/span> &lt;/div>
+            </code></pre>
+        </div>
+
+        <div class="sub-section ">
+          <h3 class="section-sub-heading">Floating Action Button</h3>
+          <div class="floating-action-button-component">
+            <button class="floating-action-button"> <i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
+          <pre>
+            <code class="language-html">
+              &lt;div class="floating-action-button-component">
+              &lt;button class="fab"> &lt;img src="...">&lt;/button>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- END button section -->
+
+      <!-- START badge section -->
+      <div class="section">
+
+        <h2 class="section-heading">Badges</h2>
+
+        <div class="sub-section">
+
+          <h3 class="section-sub-heading">Avatars With Badges</h3>
           <p>The badge component can be used with and without the count.</p>
 
 
@@ -179,60 +285,50 @@
             </code></pre>
         </div>
 
-        <div class="badges-icon-section">
-
-          <h2>Icons With Badges</h2>
-
-          <p>The icons can be used with and without the badge.
-
-          </p>
-
-
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Icons With Badges</h3>
+          <p>The icons can be used with and without the badge.</p>
           <div class="badges-icon-images">
-
             <figure class="icon icon-cart ">
-
-              <div> <i class="fa-solid fa-cart-shopping"></i></div>
+              <i class="fa-solid fa-cart-shopping"></i>
               <div class="badge-count">1</div>
-
             </figure>
-
             <figure class="icon icon-wishlist ">
               <i class="fa-solid fa-bookmark"></i>
               <div class="badge-count">1</div>
-
-
             </figure>
             <figure class="icon icon-notification ">
               <i class="fa-solid fa-bell"></i>
               <div class="badge-count">1</div>
-
-
+            </figure>
           </div>
-          <pre> <code class="language-html">
-              &lt;figure class="icon icon-cart ">
-                &lt;div> &lt;i class="fa-solid fa-cart-shopping">&lt;/i>&lt;/div>
-                  &lt;div class="badge-count">1&lt;/div>
-                &lt;/figure>
+          <pre>
+              <code class="language-html">
+                &lt;figure class="icon icon-cart "&gt;
+                &lt;div&gt; &lt;i class="fa-solid fa-cart-shopping"&gt;&lt;/i&gt;&lt;/div&gt;
+                  &lt;div class="badge-count"&gt;1&lt;/div&gt;
+                &lt;/figure&gt;
 
-                &lt;figure class="icon icon-wishlist ">
-                  &lt;i class="fa-solid fa-bookmark">&lt;/i>
-                  &lt;div class="badge-count">1&lt;/div>
-                &lt;/figure>
+                &lt;figure class="icon icon-wishlist "&gt;
+                  &lt;i class="fa-solid fa-bookmark"&gt;&lt;/i&gt;
+                  &lt;div class="badge-count"&gt;1&lt;/div&gt;
+                &lt;/figure&gt;
 
-                &lt;figure class="icon icon-notification ">
-                  &lt;i class="fa-solid fa-bell">&lt;/i>
-                  &lt;div class="badge-count">1&lt;/div>
-                  &lt;/figure>
-                 </code></pre>
+                &lt;figure class="icon icon-notification "&gt;
+                  &lt;i class="fa-solid fa-bell"&gt;&lt;/i&gt;
+                  &lt;div class="badge-count"&gt;1&lt;/div&gt;
+                &lt;/figure&gt;
+              </code>
+            </pre>
         </div>
+
       </div>
+      <!-- EMD badge section -->
 
     </div>
-
-
   </div>
-  </div>
+
+  <!-- custom scripts -->
   <script src="./prism/prism.js"></script>
   <script src="https://kit.fontawesome.com/6f5378765c.js" crossorigin="anonymous"></script>
 

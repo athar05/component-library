@@ -5,6 +5,13 @@
   --bg-color-white: #ffffff;
   --icon-bg: orangered;
   --p-color: black;
+  --btn-danger: red;
+  --btn-success: green;
+  --btn-success-lt: #daece4;
+  --alert-success: #d1e7dd;
+  --alert-danger: #f8d7da;
+  --alert-warning: #fff3cd;
+  --alert-info: #cff4fc;
 
   --shadow-10: 1px 2px 9px 5px rgba(51, 51, 51, 0.2);
   --shadow-90: 1px 2px 9px 5px rgba(0, 0, 0, 0.2);
@@ -74,13 +81,12 @@ body {
 }
 
 .sidemenu {
+  padding: 0.5rem 0.5rem;
   grid-area: 2 / 1 / 9 / 3;
-  margin-left: 1rem;
-  margin-top: 1rem;
 }
 
 .sidemenu.getting-started {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .getting-started.heading {
@@ -134,8 +140,6 @@ body {
 
 .main {
   grid-area: 2 / 3 / 9 / 9;
-
-  margin-top: 2rem;
   width: 60rem;
 }
 
@@ -157,7 +161,7 @@ h6 {
 /* home page start */
 
 .main-index {
-  height: 70%;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,16 +260,147 @@ h6 {
 
 /* components page starts */
 
-/* avatar page starts */
+/* common styles for sections and section headings */
+.section {
+  padding: 0.5rem 0.5rem;
+}
+.sub-section {
+  padding: 0.25rem 0rem;
+}
 
-.standard-avatar-section {
+.section .section-heading {
+  font-weight: 700;
+  /* font-size: 2.75rem; */
+  /* line-height: 3.25rem; */
+  padding: 0.5rem 0rem;
+}
+
+.section .section-sub-heading {
+  font-weight: 300;
+  /* font-size: 2rem; */
+  /* line-height: 2.75rem; */
+  padding: 0.5rem 0rem;
+}
+
+/* alert section begins */
+
+.alert-components {
+  display: flex;
+  flex-direction: column;
+}
+
+.alert {
   font: inherit;
-  margin-bottom: 2rem;
+  display: flex;
+  height: 2rem;
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem;
+  border-radius: 0.5rem;
 }
 
-.standard-avatar-heading {
-  margin: 0.5rem 0;
+.alert.alert-success {
+  background-color: var(--alert-success);
 }
+
+.alert.alert-danger {
+  background-color: var(--alert-danger);
+}
+
+.alert.alert-warning {
+  background-color: var(--alert-warning);
+}
+
+.alert.alert-info {
+  background-color: var(--alert-info);
+}
+
+/* alert section ends */
+
+/* button section starts  */
+
+.solid-button-components {
+  display: flex;
+}
+
+.button {
+  border-radius: 0.5rem;
+  margin: 1rem 1rem;
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button-primary {
+  background-color: var(--btn-success);
+}
+
+.button-secondary {
+  background-color: var(--btn-success-lt);
+}
+
+.button-danger {
+  background-color: var(--btn-danger);
+}
+
+.link-button-components {
+  display: flex;
+}
+
+.button-link a:link {
+  text-decoration: none;
+}
+
+.icon-button-compenents {
+  display: flex;
+}
+
+.button-icon {
+  display: flex;
+  justify-content: space-around;
+  width: 7.8rem;
+  background-color: var(--primary);
+  color: var(--bg-color-white);
+}
+
+.button.button-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.floating-action-button-component {
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+}
+
+.floating-action-button {
+  background-color: var(--primary);
+  color: var(--bg-color-white);
+  font-size: 1.3rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.floating-action-button:hover {
+  border: none;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* button section ends  */
+
+/* avatar page starts */
 
 .highlight-text {
   background-color: var(--bg-color);
@@ -312,9 +447,6 @@ h6 {
 /* avatar page ends */
 
 /* badge section starts */
-.badge-section {
-  font: inherit;
-}
 
 .badges-avatar-images {
   margin: 2rem 0;
@@ -347,10 +479,6 @@ h6 {
 .avatar > .badge-count.badge-far {
   bottom: 0.2rem;
   right: 0.6rem;
-}
-
-.badges-icon-section {
-  margin: 2rem 0;
 }
 
 .badges-icon-images {
