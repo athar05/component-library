@@ -12,6 +12,9 @@
   --alert-danger: #f8d7da;
   --alert-warning: #fff3cd;
   --alert-info: #cff4fc;
+  --input-error: red;
+  --input-warn: #ffae22;
+  --input-success: #059669;
 
   --shadow-10: 1px 2px 9px 5px rgba(51, 51, 51, 0.2);
   --shadow-90: 1px 2px 9px 5px rgba(0, 0, 0, 0.2);
@@ -146,7 +149,7 @@ body {
 .main p {
   color: var(--p-color);
   font-size: 1.3 rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .main h1,
@@ -515,7 +518,56 @@ h6 {
   right: 0.7rem;
   font-size: 1rem;
 }
-
 /* badge section ends */
+
+/* image section starts */
+.image-res {
+  width: 100%;
+  height: auto;
+}
+
+.image-round {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.image-round > div {
+  margin: 1rem;
+}
+
+.section-sub-heading.image-section {
+  display: flex;
+}
+
+/* image section ends */
+
+/* input section starts */
+
+.input > input {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  border: 3px solid var(--secondary);
+  width: 20em;
+  height: 3em;
+  padding: 0.2em;
+}
+
+.input-err > input {
+  border: 3px solid var(--input-error);
+}
+
+.input-warn > input {
+  border: 3px solid var(--input-warn);
+}
+
+.input-succ > input {
+  border: 3px solid var(--input-success);
+}
+
+/* input section ends */
 
 /* componenents page ends */
