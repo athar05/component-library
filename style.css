@@ -83,6 +83,8 @@ body {
 .sidemenu {
   padding: 0.5rem 0.5rem;
   grid-area: 2 / 1 / 9 / 3;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .sidemenu.getting-started {
