@@ -143,7 +143,6 @@ body {
 
 .main {
   grid-area: 2 / 3 / 9 / 9;
-  width: 60rem;
 }
 
 .main p {
