@@ -1,6 +1,10 @@
 # component-library
 aqua.ui is a component library for developing mordern and aesthetic User-Interfaces
 
+Website Preview
+![image](https://user-images.githubusercontent.com/82315023/154822073-3b53706d-1e19-4a4a-b56b-d4eea9a511d6.png)
+
+
 Tech Stack
 HTML5, Vanilla CSS, prism.js
 
