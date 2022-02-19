@@ -197,11 +197,11 @@ a {
   padding-left: 0.6rem;
 }
 
-.sidemenu-getting-started > p:active {
+/* .sidemenu-getting-started > p:active {
   cursor: pointer;
   color: black;
   background-color: var(--bg-color);
-}
+} */
 
 .sidemenu-components h3 {
   padding-bottom: 1rem;
