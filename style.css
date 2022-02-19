@@ -56,20 +56,20 @@ body {
 
 .header {
   grid-area: header;
-  background-color: var(--header-bg);
+  background-color: var(--bg-color-white);
 }
 .sidemenu {
   grid-area: sidemenu;
-  background-color: var(--sidemenu-bg);
+  background-color: var(--bg-color-white);
 }
 .main {
   grid-area: main;
-  background-color: var(--main-bg);
+  background-color: var(--bg-color-white);
   padding: 0rem 0.5rem;
 }
 .footer {
   grid-area: footer;
-  background-color: var(--footer-bg);
+  background-color: var(--bg-color-white);
 }
 
 a {
