@@ -16,17 +16,18 @@
 <body>
 
   <div class="parent">
+    <!-- start header section -->
     <div class="header">
-      <div class="header header-left">
+      <div class="header-left">
         <img src="./images/Minimal UI Icon.png" class="header-left header-icon"></img>
 
 
-        <h2 class="header-left header-title">aqua.ui</h2>
+        <h2 class="header-left-header-title">aqua.ui</h2>
       </div>
 
-      <div class="header header-right">
+      <div class="header-header-right">
 
-        <div class="header-right header-right-icons">
+        <div class="header-right-header-right-icons">
           <a href="https://github.com/athar05"> <i class="fab fa-github-square"></i></a>
           <a href="https://www.linkedin.com/in/athar-shakeel-a8544588/"> <i class="fab fa-linkedin"></i></a>
           <a href="https://www.instagram.com/atharo5/"> <i class="fab fa-instagram"></i></a>
@@ -35,63 +36,108 @@
       </div>
     </div>
 
+    <!-- end header section -->
+
+    <!-- Start side menu section -->
+
+    <!-- <div class="mobile-menu">
+      <h1>mobile menu</h1>
+    </div> -->
     <div class="sidemenu">
-      <div class="sidemenu getting-started">
+      <div class="desktop-menu">
+        <div class="sidemenu-getting-started">
 
-        <h3 class="getting-started heading">Getting Started</h3>
-        <p class="getting-started usage">Usage</p>
+          <h3>Getting Started</h3>
+          <p> <a href="./usage.html"> Usage </a></p>
+
+        </div>
+        <div class="sidemenu-components">
+          <h3>Components</h3>
+          <p> <a href="#alert">Alert</a> </p>
+          <p> <a href="#avatar">Avatar </a> </p>
+          <p> <a href="#badge"> Badge</a></p>
+          <p> <a href="#button"> Button</a></p>
+          <p> <a href="#card"> Card</a></p>
+          <p> <a href="#image"> Image</a></p>
+          <p> <a href="#input"> Input</a></p>
+          <p> <a href="#list"> List</a></p>
+          <p><a href="#navigation">Navigation</a> </p>
+          <p><a href="#typography"> Typography</a></p>
+        </div>
       </div>
-      <div class="sidemenu components">
-        <h3>Components</h3>
-        <p>Avatar</p>
-        <p>Alert</p>
-        <p>Badge</p>
-        <p>Button</p>
-        <p>Card</p>
-        <p>Image</p>
-        <p>Input</p>
-        <p>List</p>
-        <p>Navigation</p>
-        <p>Toast</p>
-      </div>
-
-
     </div>
+    <!-- End sidemenu section -->
+
 
     <div class="main">
 
+      <!-- START component section -->
+      <!-- START alert section -->
+      <div class="section" id="alert">
+        <h2 class="section-heading"> Alerts</h2>
+        <p class="text-lg">An alert can be used to notify user about something important without interupting the user
+          experience</p>
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Standard alerts</h3>
+          <p>The alert component has four variants <span class="highlight-text">alert-success</span>, <span
+              class="highlight-text"> alert-danger</span>,
+            <span class="highlight-text">alert-warning</span> & <span class="highlight-text"> alert-info</span>
+          </p>
+
+          <div class="alert-components">
+            <div class="alert alert-success">This is success alert</div>
+            <div class="alert alert-danger">This is danger alert</div>
+            <div class="alert alert-warning">This is warning alert</div>
+            <div class="alert alert-info">This is info alert</div>
+          </div>
+          <pre>
+          <code class="language-html">
+            &lt;div class="alert alert-success"&gt;This is success alert&lt;/div&gt;
+            &lt;div class="alert alert-danger"&gt;This is danger alert&lt;/div&gt;
+            &lt;div class="alert alert-warning"&gt;This is warning alert&lt;/div&gt;
+            &lt;div class="alert alert-info"&gt;This is info alert&lt;/div&gt;
+          </code>
+        </pre>
+        </div>
+      </div>
+      <!-- END altert section -->
+
       <!-- START avatar section -->
-      <div class="section">
+      <div class="section" id="avatar">
 
         <h2 class="section-heading"> Avatars</h2>
+        <p class="text-lg">An avatar is a representation of who we are or our fictional character, which can be used to
+          represent user's profile pic.</p>
 
-        <p>The avatar component has 5 sizes, <span class="highlight-text">avatar-xl</span> (4em), <span
-            class="highlight-text"> avatar-lg</span> (3em), <span class="highlight-text"> avatar-std </span> (2em) <span
-            class="highlight-text"> avatar-sm </span> (1.5em), and <span class="highlight-text"> avatar-xs </span>
-          (1em).</p>
+        <div class="sub-section">
+          <p>The avatar component has 5 sizes, <span class="highlight-text">avatar-xl</span> (4em), <span
+              class="highlight-text"> avatar-lg</span> (3em), <span class="highlight-text"> avatar-std </span> (2em)
+            <span class="highlight-text"> avatar-sm </span> (1.5em), and <span class="highlight-text"> avatar-xs </span>
+            (1em).
+          </p>
+          <div class="avatar-components">
+            <figure class="avatar avatar-xl">
+              <img src="./images/avatar-xl.png" alt="">
 
-        <div class="standard-avatar-images">
-          <figure class="avatar avatar-xl">
-            <img src="./images/avatar-xl.png" alt="">
+            </figure>
 
-          </figure>
+            <figure class="avatar avatar-lg">
+              <img src="./images/avatar-lg.png" alt="">
 
-          <figure class="avatar avatar-lg">
-            <img src="./images/avatar-lg.png" alt="">
+            </figure>
+            <figure class="avatar avatar-md">
+              <img src="./images/avatar-md.png" alt="">
 
-          </figure>
-          <figure class="avatar avatar-md">
-            <img src="./images/avatar-md.png" alt="">
+            </figure>
+            <figure class="avatar avatar-sm">
+              <img src="./images/avatar-sm.png" alt="">
 
-          </figure>
-          <figure class="avatar avatar-sm">
-            <img src="./images/avatar-sm.png" alt="">
+            </figure>
+            <figure class="avatar avatar-xs">
+              <img src="./images/avatar-xs.png" alt="">
 
-          </figure>
-          <figure class="avatar avatar-xs">
-            <img src="./images/avatar-xs.png" alt="">
-
-          </figure>
+            </figure>
+          </div>
         </div>
 
         <pre> <code class="language-html">
@@ -124,40 +170,111 @@
 
       </div>
       <!-- END avarar section -->
+      <!-- START badge section -->
+      <div class="section" id="badge">
 
-      <!-- START alert section -->
-      <div class="section">
-        <h2 class="section-heading">Standard Alerts</h2>
-        <p>The alert component has four variants <span class="highlight-text">alert-success</span>, <span
-            class="highlight-text"> alert-danger</span>,
-          <span class="highlight-text">alert-warning</span> & <span class="highlight-text"> alert-info</span>
+        <h2 class="section-heading">Badges</h2>
+        <p class="text-lg">Badges are small components on websites that are used to display count or status of a user.
         </p>
 
-        <div class="alert-components">
-          <div class="alert alert-success">This is success alert</div>
-          <div class="alert alert-danger">This is danger alert</div>
-          <div class="alert alert-warning">This is warning alert</div>
-          <div class="alert alert-info">This is info alert</div>
-        </div>
-        <pre>
-          <code class="language-html">
-            &lt;div class="alert alert-success"&gt;This is success alert&lt;/div&gt;
-            &lt;div class="alert alert-danger"&gt;This is danger alert&lt;/div&gt;
-            &lt;div class="alert alert-warning"&gt;This is warning alert&lt;/div&gt;
-            &lt;div class="alert alert-info"&gt;This is info alert&lt;/div&gt;
-          </code>
-        </pre>
-      </div>
-      <!-- END altert section -->
+        <div class="sub-section">
 
+          <h3 class="section-sub-heading">Avatars With Badges</h3>
+          <p>The badge component can be used with and without the count.</p>
+
+
+          <div class="badges-avatar-images">
+
+            <figure class="avatar avatar-xl ">
+              <img src="./images/avatar-xl.png" alt="">
+              <div class="badge-count badge-near">1</div>
+
+            </figure>
+
+            <figure class="avatar avatar-lg ">
+              <img src="./images/avatar-lg.png" alt="">
+              <div class="badge-count badge-normal">1</div>
+
+            </figure>
+            <figure class="avatar avatar-md ">
+              <img src="./images/avatar-md.png" alt="">
+              <div class="badge-count badge-near">1</div>
+
+            </figure>
+          </div>
+
+          <pre> <code class="language-html">
+
+      //big avatar with badge
+      &lt;figure class="avatar avatar-xl ">
+        &lt;img src="..." alt="">
+        &lt;div class="badge-count badge-near">1&lt;/div>
+      &lt;/figure>
+
+      //medium avatar with badge
+      &lt;figure class="avatar avatar-lg ">
+        &lt;img src="..." alt="">
+        &lt;div class="badge-count badge-normal">1&lt;/div>
+      &lt;/figure>
+
+      //small avatar with badge
+      &lt;figure class="avatar avatar-md ">
+        &lt;img src="..." alt="">
+        &lt;div class="badge-count badge-near">1&lt;/div>
+      </code></pre>
+        </div>
+
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Icons With Badges</h3>
+          <p>The icons can be used with and without the badge.</p>
+          <div class="badges-icon-images">
+            <figure class="icon icon-cart ">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="badge-count">1</div>
+            </figure>
+            <figure class="icon icon-wishlist ">
+              <i class="fa-solid fa-bookmark"></i>
+              <div class="badge-count">1</div>
+            </figure>
+            <figure class="icon icon-notification ">
+              <i class="fa-solid fa-bell"></i>
+              <div class="badge-count">1</div>
+            </figure>
+          </div>
+          <pre>
+        <code class="language-html">
+          &lt;figure class="icon icon-cart "&gt;
+          &lt;div&gt; &lt;i class="fa-solid fa-cart-shopping"&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;div class="badge-count"&gt;1&lt;/div&gt;
+          &lt;/figure&gt;
+
+          &lt;figure class="icon icon-wishlist "&gt;
+            &lt;i class="fa-solid fa-bookmark"&gt;&lt;/i&gt;
+            &lt;div class="badge-count"&gt;1&lt;/div&gt;
+          &lt;/figure&gt;
+
+          &lt;figure class="icon icon-notification "&gt;
+            &lt;i class="fa-solid fa-bell"&gt;&lt;/i&gt;
+            &lt;div class="badge-count"&gt;1&lt;/div&gt;
+          &lt;/figure&gt;
+        </code>
+      </pre>
+        </div>
+
+      </div>
+      <!-- EMD badge section -->
       <!-- START buttons section -->
-      <div class="section">
+      <div class="section" id="button">
         <h2 class="section-heading">Buttons</h2>
+        <p class="text-lg">Buttons, aka CTAs, are an integral part of websites, and are used on forms, webpages, dialog
+          boxes, and input feilds</p>
 
         <div class="sub-section">
 
           <h3 class="section-sub-heading">Solid buttons</h3>
-          <p>The solid button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+          <p>The solid button component is available in three variants <span class="highlight-text"> btn-primary</span>,
+            <span class="highlight-text"> btn-secondary</span> and <span class="highlight-text"> btn-danger</span>.
+          </p>
 
           <div class="solid-button-components">
 
@@ -174,7 +291,9 @@
 
         <div class="sub-section">
           <h3 class="section-sub-heading"> Link Buttons</h3>
-          <p>The link button component is available in three variants btn-primary, btn-secondary and btn-danger. </p>
+          <p>The link button component is available in three variants <span class="highlight-text"> btn-primary</span>,
+            <span class="highlight-text"> btn-secondary</span> and <span class="highlight-text"> btn-danger</span>.
+          </p>
           <div class="link-button-components">
 
             <a href="">
@@ -233,121 +352,33 @@
       </div>
       <!-- END button section -->
 
-      <!-- START badge section -->
-      <div class="section">
 
-        <h2 class="section-heading">Badges</h2>
-
-        <div class="sub-section">
-
-          <h3 class="section-sub-heading">Avatars With Badges</h3>
-          <p>The badge component can be used with and without the count.</p>
-
-
-          <div class="badges-avatar-images">
-
-            <figure class="avatar avatar-xl ">
-              <img src="./images/avatar-xl.png" alt="">
-              <div class="badge-count badge-near">1</div>
-
-            </figure>
-
-            <figure class="avatar avatar-lg ">
-              <img src="./images/avatar-lg.png" alt="">
-              <div class="badge-count badge-normal">1</div>
-
-            </figure>
-            <figure class="avatar avatar-md ">
-              <img src="./images/avatar-md.png" alt="">
-              <div class="badge-count badge-near">1</div>
-
-            </figure>
-          </div>
-
-          <pre> <code class="language-html">
-
-            //big avatar with badge
-            &lt;figure class="avatar avatar-xl ">
-              &lt;img src="..." alt="">
-              &lt;div class="badge-count badge-near">1&lt;/div>
-            &lt;/figure>
-
-            //medium avatar with badge
-            &lt;figure class="avatar avatar-lg ">
-              &lt;img src="..." alt="">
-              &lt;div class="badge-count badge-normal">1&lt;/div>
-            &lt;/figure>
-
-            //small avatar with badge
-            &lt;figure class="avatar avatar-md ">
-              &lt;img src="..." alt="">
-              &lt;div class="badge-count badge-near">1&lt;/div>
-            </code></pre>
-        </div>
-
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Icons With Badges</h3>
-          <p>The icons can be used with and without the badge.</p>
-          <div class="badges-icon-images">
-            <figure class="icon icon-cart ">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <div class="badge-count">1</div>
-            </figure>
-            <figure class="icon icon-wishlist ">
-              <i class="fa-solid fa-bookmark"></i>
-              <div class="badge-count">1</div>
-            </figure>
-            <figure class="icon icon-notification ">
-              <i class="fa-solid fa-bell"></i>
-              <div class="badge-count">1</div>
-            </figure>
-          </div>
-          <pre>
-              <code class="language-html">
-                &lt;figure class="icon icon-cart "&gt;
-                &lt;div&gt; &lt;i class="fa-solid fa-cart-shopping"&gt;&lt;/i&gt;&lt;/div&gt;
-                  &lt;div class="badge-count"&gt;1&lt;/div&gt;
-                &lt;/figure&gt;
-
-                &lt;figure class="icon icon-wishlist "&gt;
-                  &lt;i class="fa-solid fa-bookmark"&gt;&lt;/i&gt;
-                  &lt;div class="badge-count"&gt;1&lt;/div&gt;
-                &lt;/figure&gt;
-
-                &lt;figure class="icon icon-notification "&gt;
-                  &lt;i class="fa-solid fa-bell"&gt;&lt;/i&gt;
-                  &lt;div class="badge-count"&gt;1&lt;/div&gt;
-                &lt;/figure&gt;
-              </code>
-            </pre>
-        </div>
-
-      </div>
-      <!-- EMD badge section -->
       <!-- START cards section -->
-      <div class="section">
-        <h2 class="section-heading">Badges</h2>
+      <div class="section" id="card">
+        <h2 class="section-heading">Cards</h2>
+        <p class="text-lg">Cards are an essential feature of modern web apps, which can be used to show product details,
+          video details or user details.</p>
         <div class="sub-section">
           <h3 class="section-sub-heading">Card With Badge</h3>
           <div class="card">
-            <div>
+            <div class="card-image-with-badge">
               <img class="card-image" src="./images/shoe.png" alt="" />
-              <figure class="icon">
-                <div> <i class="fa-solid fa-tag"></i></div>
+              <figure>
+                <i class="fa-solid fa-heart"></i>
               </figure>
-              <div class="card-description">
-                <h2>Converse</h2>
-                <p>
-                  Men High Top Shoes
-                </p>
-                <p>
-                  ₹1299 <strike class="card-strk">₹1599</strike>
-                </p>
-                <div class="card-buttons">
-                  <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
-                    </span> </div>
-                  <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
-                  </div>
+            </div>
+            <div class="card-description">
+              <h2>Converse</h2>
+              <p>
+                Men High Top Shoes
+              </p>
+              <p>
+                ₹1299 <strike class="card-strk">₹1599</strike>
+              </p>
+              <div class="card-buttons">
+                <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
+                  </span> </div>
+                <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
                 </div>
               </div>
             </div>
@@ -355,24 +386,24 @@
           <pre>
             <code class="language-html">
               &lt;div class="card">
-                &lt;div>
-                  &lt;img class="card-image" src="..." alt="" />
-                  &lt;figure class="icon">
-                    &lt;div> &lt;img src="..." alt="" srcset="">&lt;/div>
+                &lt;div class="card-image-with-badge">
+                  &lt;img class="card-image" src="./images/shoe.png" alt="" />
+                  &lt;figure>
+                    &lt;i class="fa-solid fa-heart">&lt;/i>
                   &lt;/figure>
-                  &lt;div class="card-description">
-                    &lt;h2>Converse&lt;/h2>
-                    &lt;p>
-                      Men High Top Shoes
-                    &lt;/p>
-                    <&lt;>
-                      ₹1299 &lt;strike class="card-strk">₹1599&lt;/strike>
-                    &lt;/p>
-                    &lt;div class="card-buttons">
-                      &lt;div class="button button-icon"> &lt;img src="..." alt="" srcset=""> &lt;span> Add To Cart
-                        &lt;/span> &lt;/div>
-                      &lt;div class="button button-icon"> &lt;img src="..." alt="" srcset="">&lt;span> Buy Now &lt;/span>
-                      &lt;/div>
+                &lt;/div>
+                &lt;div class="card-description">
+                  &lt;h2>Converse&lt;/h2>
+                  &lt;p>
+                    Men High Top Shoes
+                  &lt;/p>
+                  &lt;p>
+                    ₹1299 &lt;strike class="card-strk">₹1599&lt;/strike>
+                  &lt;/p>
+                  &lt;div class="card-buttons">
+                    &lt;div class="button button-icon"> &lt;i class="fa-solid fa-cart-shopping">&lt;/i> <span> Add To Cart
+                      &lt;/span> &lt;/div>
+                    &lt;div class="button button-icon"> &lt;i class="fa-solid fa-bag-shopping">&lt;/i><span> Buy Now &lt;/span>
                     &lt;/div>
                   &lt;/div>
                 &lt;/div>
@@ -383,10 +414,10 @@
         <div class="sub-section">
           <h3 class="section-sub-heading">Card With Dismiss</h3>
           <div class="card">
-            <div>
+            <div class="card-image-with-dismiss">
               <img class="card-image" src="./images/shoe.png" alt="" />
-              <figure class="icon">
-                <div class="dismiss"><i class="fa-solid fa-xmark"></i></div>
+              <figure>
+                <i class="fa-solid fa-xmark"></i>
               </figure>
               <div class="card-description">
                 <h2>Converse</h2>
@@ -408,28 +439,28 @@
           <pre>
             <code class="language-html">
               &lt;div class="card">
-                &lt;div>
-                  &lt;img class="card-image" src="..." alt="" />
-                  &lt;figure class="icon">
-                    &lt;div class="dismiss"> &lt;img src="..." alt="" srcset="">&lt;/div>
-                  &lt;/figure>
-                  &lt;div class="card-description">
-                    &lt;h2>Converse&lt;/h2>
-                    &lt;p>
+                 &lt;div class="card-image-with-dismiss">
+                   &lt;img class="card-image" src="./images/shoe.png" alt="" />
+                   &lt;figure>
+                     &lt;i class="fa-solid fa-xmark"> &lt;/i>
+                   &lt;/figure>
+                   &lt;div class="card-description">
+                     &lt;h2>Converse &lt;/h2>
+                     &lt;p>
                       Men High Top Shoes
-                    &lt;/p>
-                    <&lt;>
-                      ₹1299 &lt;strike class="card-strk">₹1599&lt;/strike>
-                    &lt;/p>
-                    &lt;div class="card-buttons">
-                      &lt;div class="button button-icon"> &lt;img src="..." alt="" srcset=""> &lt;span> Add To Cart
-                        &lt;/span> &lt;/div>
-                      &lt;div class="button button-icon"> &lt;img src="..." alt="" srcset="">&lt;span> Buy Now &lt;/span>
-                      &lt;/div>
-                    &lt;/div>
-                  &lt;/div>
-                &lt;/div>
-              &lt;/div>
+                     &lt;/p>
+                     &lt;p>
+                      ₹1299  &lt;strike class="card-strk">₹1599 &lt;/strike>
+                     &lt;/p>
+                     &lt;div class="card-buttons">
+                       &lt;div class="button button-icon">  &lt;i class="fa-solid fa-cart-shopping"> &lt;/i>  &lt;span> Add To Cart
+                         &lt;/span>  &lt;/div>
+                       &lt;div class="button button-icon">  &lt;i class="fa-solid fa-bag-shopping"> &lt;/i> &lt;span> Buy Now  &lt;/span>
+                       &lt;/div>
+                     &lt;/div>
+                   &lt;/div>
+                 &lt;/div>
+               &lt;/div>
             </code>
           </pre>
         </div>
@@ -458,24 +489,25 @@
           <pre>
             <code class="language-html">
                  &lt;div class="card">
-                   &lt;div>
-                     &lt;img class="card-image" src="./images/shoe.png" alt="" />
-                     &lt;div class="card-description card-text-overlay">
-                       &lt;h2>Converse &lt;/h2>
-                       &lt;p>
+                  &lt;div>
+                    &lt;img class="card-image" src="./images/shoe.png" alt="" />
+                    &lt;div class="card-description card-text-overlay">
+                      &lt;h2>Converse&lt;/h2>
+                      &lt;p>
                         Men High Top Shoes
-                       &lt;/p>
-                       &lt;p>
-                        ₹1299  &lt;strike class="card-strk">₹1599 &lt;/strike>
-                       &lt;/p>
-                     &lt;/div>
-                     &lt;div class="card-buttons card-buttons-light">
-                       &lt;div class="button button-icon">  &lt;i class="fa-solid fa-cart-shopping"> &lt;/i>  &lt;span> Add To Cart
-                         &lt;/span>  &lt;/div>
-                       &lt;div class="button button-icon">  &lt;i class="fa-solid fa-bag-shopping"> &lt;/i> &lt;span> Buy Now  &lt;/span>
-                       &lt;/div>
-                     &lt;/div>
-                   &lt;/div>
+                      &lt;/p>
+                      &lt;p>
+                        ₹1299 &lt;strike class="card-strk">₹1599&lt;/strike>
+                      &lt;/p>
+                    &lt;/div>
+                    &lt;div class="card-buttons card-buttons-light">
+                      &lt;div class="button button-icon"> &lt;i class="fa-solid fa-cart-shopping">&lt;/i> &lt;span> Add To Cart
+                        &lt;/span> &lt;/div>
+                      &lt;div class="button button-icon"> &lt;i class="fa-solid fa-bag-shopping">&lt;/i>&lt;span> Buy Now &lt;/span>
+                      &lt;/div>
+                    &lt;/div>
+                  &lt;/div>
+                &lt;/div>
             </code>
           </pre>
         </div>
@@ -512,21 +544,63 @@
         </div>
         <div class="sub-section">
           <h3 class="section-sub-heading">Card With Shadow</h3>
-          <div class="card card-shadow">
-            <div>
-              <img class="card-image" src="./images/shoe.png" alt="" />
-              <div class="card-description">
-                <h2>Converse</h2>
-                <p>
-                  Men High Top Shoes
-                </p>
-                <p>
-                  ₹1299 <strike class="card-strk">₹1599</strike>
-                </p>
-                <div class="card-buttons">
-                  <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
-                    </span> </div>
-                  <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
+          <div class="flex-row fl-wrap">
+            <div class="card card-shadow">
+              <div>
+                <img class="card-image" src="./images/shoe.png" alt="" />
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
+                      </span> </div>
+                    <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-shadow">
+              <div>
+                <img class="card-image" src="./images/shoe.png" alt="" />
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
+                      </span> </div>
+                    <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-shadow">
+              <div>
+                <img class="card-image" src="./images/shoe.png" alt="" />
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
+                      </span> </div>
+                    <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -559,8 +633,44 @@
         </div>
         <div class="sub-section">
           <h3 class="section-sub-heading">Vertical Card</h3>
-          <div class="card card-vertical">
-            <div>
+          <div class="cards-container">
+            <div class="card card-vertical">
+              <img class="card-image" src="./images/converse-vertical.jpg" alt="" />
+              <div class="card-description">
+                <h2>Converse</h2>
+                <p>
+                  Men High Top Shoes
+                </p>
+                <p>
+                  ₹1299 <strike class="card-strk">₹1599</strike>
+                </p>
+                <div class="card-buttons">
+                  <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
+                    </span> </div>
+                  <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical">
+              <img class="card-image" src="./images/converse-vertical.jpg" alt="" />
+              <div class="card-description">
+                <h2>Converse</h2>
+                <p>
+                  Men High Top Shoes
+                </p>
+                <p>
+                  ₹1299 <strike class="card-strk">₹1599</strike>
+                </p>
+                <div class="card-buttons">
+                  <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
+                    </span> </div>
+                  <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-vertical">
               <img class="card-image" src="./images/converse-vertical.jpg" alt="" />
               <div class="card-description">
                 <h2>Converse</h2>
@@ -581,26 +691,25 @@
           </div>
           <pre>
             <code class="language-html">
-               &lt;div class="card card-vertical">
-                &lt;div>
-                  &lt;img class="card-image" src="./images/converse-vertical.jpg" alt="" />
-                  &lt;div class="card-description">
-                    &lt;h2>Converse&lt;/h2>
-                    &lt;p>
-                      Men High Top Shoes
-                    &lt;/p>
-                    &lt;p>
-                      ₹1299 &lt;strike class="card-strk">₹1599&lt;/strike>
-                    &lt;/p>
-                    &lt;div class="card-buttons">
-                      <&lt;iv class="button button-icon"> &lt;i class="fa-solid fa-cart-shopping">&lt;/i> <span> Add To Cart
-                        &lt;/span> &lt;/div>
-                      &lt;div class="button button-icon"> &lt;i class="fa-solid fa-bag-shopping">&lt;/i>&lt;span> Buy Now &lt;/span>
-                      &lt;/div>
-                    &lt;/div>
-                  &lt;/div>
-                &lt;/div>
-              &lt;/div>
+              &lt;div class="cards-container">
+                <&lt;div class="card card-vertical">
+                  <&lt;img class="card-image" src="./images/converse-vertical.jpg" alt="" />
+                    <&lt;div class="card-description">
+                      <&lt;h2>Converse<&lt;/h2>
+                      <&lt;p>
+                        Men High Top Shoes
+                      <&lt;/p>
+                      <&lt;p>
+                        ₹1299 <&lt;strike class="card-strk">₹1599<&lt;/strike>
+                      <&lt;/p>
+                      <&lt;div class="card-buttons">
+                        <&lt;div class="button button-icon"> <&lt;i class="fa-solid fa-cart-shopping"><&lt;/i> <&lt;span> Add To Cart
+                          <&lt;/span> <&lt;/div>
+                        <&lt;div class="button button-icon"> <&lt;i class="fa-solid fa-bag-shopping"><&lt;/i><&lt;span> Buy Now <&lt;/span>
+                        <&lt;/div>
+                      <&lt;/div>
+                    <&lt;/div>
+                  <&lt;/div>
             </code>
           </pre>
         </div>
@@ -608,8 +717,8 @@
         <div class="sub-section">
           <h3 class="section-sub-heading">Horizontal Card</h3>
           <div class="card card-horizontal">
-            <div>
-              <img class="card-image" src="./images/shoe.png" alt="" />
+            <div class="card-image">
+              <img src="./images/shoe.png" alt="" />
             </div>
             <div class="card-description">
               <h2>Converse</h2>
@@ -619,55 +728,278 @@
               <p>
                 ₹1299 <strike class="card-strk">₹1599</strike>
               </p>
-              <div class="card-buttons">
-                <div class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart
+              <p class="text-md text-grey">
+                50% off
+              </p>
+
+              <div class="card-quantity">
+
+                <button>+</button>
+                <span>1</span>
+                <button>-</button>
+              </div>
+              <div class="card-buttons ">
+                <div class="button button-icon"><i class="fa-solid fa-trash-can"></i> <span> Remove From Cart
                   </span> </div>
-                <div class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i><span> Buy Now </span>
+                <div class="button button-icon"> <i class="fa-solid fa-angle-right"></i><span> Move to
+                    wishlist </span>
                 </div>
               </div>
             </div>
           </div>
-          <pre>
+
+        </div>
+        <pre>
             <code class="language-html">
                &lt;div class="card card-horizontal">
-               &lt;div>
-               &lt;img class="card-image" src="./images/shoe.png" alt="" />
-               &lt;/div>
-               &lt;div class="card-description">
-               &lt;h2>Converse&lt;/h2>
-               &lt;p>
-                    Men High Top Shoes
-                    &lt;/p>
-                    &lt;p>
-                    ₹1299 &lt;strike class="card-strk">₹1599&lt;/strike>
-                    &lt;/p>
-                    &lt;div class="card-buttons">
-                    &lt;div class="button button-icon"> &lt;i class="fa-solid fa-cart-shopping">&lt;/i> &lt;span> Add To Cart
-                    &lt;/span> &lt;/div>
-                    &lt;div class="button button-icon"> &lt;i class="fa-solid fa-bag-shopping">&lt;/i>&lt;span> Buy Now &lt;/span>
-                    &lt;/div>
-                 &lt;/div>
+                &lt;div class="card-image">
+                  &lt;img src="./images/shoe.png" alt="" />
                 &lt;/div>
+                &lt;div class="card-description">
+                  &lt;h2>Converse&lt;/h2>
+                  &lt;p>
+                    Men High Top Shoes
+                  &lt;/p>
+                  &lt;p>
+                    ₹1299 &lt;strike class="card-strk">₹1599&lt;/strike>
+                  &lt;/p>
+                  &lt;p class="text-md text-grey">
+                    50% off
+                  &lt;/p>
+
+                  &lt;div class="card-quantity">
+
+                    &lt;button>+&lt;/button>
+                    &lt;span>1&lt;/span>
+                    &lt;button>-&lt;/button>
+                  &lt;/div>
+                  &lt;div class="card-buttons ">
+                    &lt;div class="button button-icon">&lt;i class="fa-solid fa-trash-can">&lt;/i> &lt;span> Remove From Cart
+                      &lt;/span> &lt;/div>
+                    &lt;div class="button button-icon"> &lt;i class="fa-solid fa-angle-right">&lt;/i>&lt;span> Move to
+                        wishlist &lt;/span>
+                    &lt;/div>
+                  &lt;/div>
+                  &lt;/div>
               &lt;/div>
+            &lt;/div>
             </code>
           </pre>
+      </div>
+
+      <!-- END cards section -->
+
+      <!-- START image section -->
+      <div class="section" id="image">
+        <h2 class="section-heading">Images</h2>
+        <p class="text-lg">Images are, needless to say, one of the most important components on any website.</p>
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Responsive Image</h3>
+          <p>Add the <span class="highlight-text">img-res</span> class to make the image responsive</p>
+          <div>
+            <img class="image-res" src="./images/responsive-image.jpg" alt="">
+          </div>
+          <pre>
+      <code class="language-html">
+        &lt;img class="image-res" src="..." alt="">
+      </code>
+    </pre>
+        </div>
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Round Image</h3>
+          <p>Add the <span class="highlight-text">img-round</span> class to make the image round.</p>
+          <div>
+            <img class="image-round" src="./images/image-round-2.jpg" alt="">
+          </div>
+          <pre>
+      <code class="language-html">
+        &lt;img class="image-round" src="..." alt="">
+      </code>
+    </pre>
         </div>
       </div>
-                  
-                <!-- END cards section -->
+      <!-- END image section  -->
 
-  
+      <!-- START input section  -->
+
+      <div class="section" id="input">
+
+        <h2 class="section-heading">Input</h2>
+        <p class="text-lg">Input fields aid in collecting information from the vistors of the webpage, and also to send
+          the provided info to a database.</p>
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Standard Input</h3>
+          <div class="input">
+            <input type="text" placeholder="Enter The Text" />
+          </div>
+          <pre>
+      <code class="language-html">
+        &lt;div class="input">
+        &lt;input type="text" placeholder="Enter The Text" />
+        &lt;/div>
+      </code>
+  </div>
+  <div class="sub-section">
+    <h3 class="section-sub-heading">Inputs With Validation</h3>
+    <p>There are 3 types of inputs available depending on the state <span class="highlight-text">
+        input-err</span>,
+      <span class="highlight-text">input-warn </span> and <span class="highlight-text"> input-succ</span>.
+    </p>
+    <input class="input input-error" type="text" placeholder="Error..." />
+    <input class="input input-warn" type="text" placeholder="Warning..." />
+    <input class="input input-succ" type="text" placeholder="Success" />
+    <pre>
+      <code class="language-html">
+
+        //for error input
+         &lt;input class="input input-error" type="text" placeholder="Error..." />
+
+         //for warning input
+         &lt;input class="input input-warn" type="text" placeholder="Warning..." />
+
+
+         //for success input
+         &lt;input class="input input-succ" type="text" placeholder="Success" />
+
+      </code>
+  </div>
+</div>
+<!-- END input section -->
+
+  <!-- START List Section  -->
+  <div class="section" id="list">
+    <h2 class="section-heading">Lists</h2>
+    <p class="text-lg">Lists are another essential part of websites that can be used in nav bar, dropdown menus,
+      article pages, etc.</p>
+    <div class="sub-section">
+      <h3 class="section-sub-heading">Ordered List</h3>
+      <p>For an ordered list, class ordered-list can be used</p>
+      <ol class="ordered-list">
+        <li class="text-md text-primary">Hello</li>
+        <li class="text-md text-primary">Hello</li>
+        <li class="text-md text-primary">Hello</li>
+        <li class="text-md text-primary">Hello</li>
+        <li class="text-md text-primary">Hello</li>
+      </ol>
+      <pre>
+      <code class="language-html">
+        &lt;ol class="ordered-list">
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+        &lt;/ol>
+      </code>
+    </pre>
+        </div>
+
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Unordered List</h3>
+          <p>For an unordered list, class unordered-list can be used</p>
+          <ul class="unordered-list">
+            <li class="text-md text-primary">Hello</li>
+            <li class="text-md text-primary">Hello</li>
+            <li class="text-md text-primary">Hello</li>
+            <li class="text-md text-primary">Hello</li>
+            <li class="text-md text-primary">Hello</li>
+          </ul>
+          <pre>
+      <code class="language-html">
+        &lt;ul class="unordered-list">
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+          &lt;li class="text-md text-primary">Hello&lt;/li>
+        &lt;/ul>
+      </code>
+    </pre>
+        </div>
+
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Checkbox List</h3>
+          <p>For a list with checkboxes, class <span class="highlight-text">checkbox-list</span> can be used</p>
+          <ul class="checkbox-list">
+            <li class="text-md text-primary"><input type="checkbox"> checkbox 1</li>
+            <li class="text-md text-primary"><input type="checkbox"> checkbox 2</li>
+            <li class="text-md text-primary"><input type="checkbox"> checkbox 3</li>
+            <li class="text-md text-primary"><input type="checkbox"> checkbox 4</li>
+          </ul>
+          <pre>
+      <code class="language-html">
+        &lt;ul class="checkbox-list">
+          &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 1&lt;/li>
+          &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 2&lt;/li>
+          &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 3&lt;/li>
+          &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 4&lt;/li>
+        &lt;/ul>
+      </code>
+    </pre>
+        </div>
+
+        <div class="sub-section">
+          <h3 class="section-sub-heading">Stacked List</h3>
+          <div class="stacked-li">
+            <div class="notification">
+              <figure class="avatar avatar-md">
+                <img src="./images/avatar-md.png" alt="">
+              </figure>
+              <div class="notification-info">
+                <p class="text-primary text-md">John Doe Sent You A Friend Request</p>
+                <p class="text-grey text-sm">5 mins ago</p>
+              </div>
+            </div>
+            <div class="notification">
+              <figure class="avatar avatar-md">
+                <img src="./images/avatar-xs.png" alt="">
+              </figure>
+              <div class="notification-info">
+                <p class="text-primary text-md">John Doe Commented On Your Picture</p>
+                <p class="text-grey text-sm">15 mins ago</p>
+              </div>
+            </div>
+            <div class="notification">
+              <figure class="avatar avatar-md">
+                <img src="./images/avatar-lg.png" alt="">
+              </figure>
+              <div class="notification-info">
+                <p class="text-primary text-md">John Doe Tagged You In A Post</p>
+                <p class="text-grey text-sm">5 mins ago</p>
+              </div>
+            </div>
+          </div>
+          <pre>
+      <code class="language-html">
+        &lt;div class="stacked-li">
+        &lt;div class="notification">
+          &lt;figure class="avatar avatar-md">
+            &lt;img src="./images/avatar-md.png" alt="">
+          &lt;/figure>
+          &lt;div class="notification-info">
+            &lt;p class="text-primary text-md">John Doe Sent You A Friend Request&lt;/p>
+            &lt;p class="text-grey text-sm">5 mins ago&lt;/p>
+          &lt;/div>
+        &lt;/div>
+        &lt;/div>
+      </code>
+    </pre>
+        </div>
+
+      </div>
+      <!-- END List section -->
 
 
       <!-- START navigation section -->
 
-      <div class="section">
+      <div class="section" id="navigation">
 
         <h2 class="section-heading">Navigation</h2>
-        <p>This is a simple navigation component.</p>
+        <p class="text-lg">A navigation bar is one of the most essential parts of a website which, needless to say,
+          helps users to navigate through different pages of the website.</p>
 
         <div class="sub-section">
-
+          <h3 class="section-sub-heading">Simple Navigation</h3>
           <div class="nav">
 
             <div class="nav-left">
@@ -726,14 +1058,13 @@
       </div>
       <!-- END navigation section -->
 
- 
-
 
       <!-- START Typography section -->
-      <div class="section">
+      <div class="section" id="typography">
 
         <h2 class="section-heading">Typography</h2>
-
+        <p class="text-lg">Text utilities helps one maintain a consistent style and tyopography throught the different
+          sections of a website.</p>
         <div class="sub-section">
           <h3 class="section-sub-heading">Headings</h3>
           <p>For headings, h1, h2, h3, h4, h5, h6 tags can be used. The same font-styling is present for class names
@@ -814,213 +1145,9 @@
 
       <!-- END Typography section -->
 
-      <!-- START List Section  -->
-      <div class="section">
-        <h2 class="section-heading">Lists</h2>
-
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Ordered List</h3>
-          <p>For an ordered list, class ordered-list can be used</p>
-          <ol class="ordered-list">
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-          </ol>
-          <pre>
-            <code class="language-html">
-              &lt;ol class="ordered-list">
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-              &lt;/ol>
-            </code>
-          </pre>
-        </div>
-
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Unordered List</h3>
-          <p>For an unordered list, class unordered-list can be used</p>
-          <ul class="unordered-list">
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-            <li class="text-md text-primary">Hello</li>
-          </ul>
-          <pre>
-            <code class="language-html">
-              &lt;ul class="unordered-list">
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-                &lt;li class="text-md text-primary">Hello&lt;/li>
-              &lt;/ul>
-            </code>
-          </pre>
-        </div>
-
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Checkbox List</h3>
-          <p>For a list with checkboxes, class <span class="highlight-text">checkbox-list</span> can be used</p>
-          <ul class="checkbox-list">
-            <li class="text-md text-primary"><input type="checkbox"> checkbox 1</li>
-            <li class="text-md text-primary"><input type="checkbox"> checkbox 2</li>
-            <li class="text-md text-primary"><input type="checkbox"> checkbox 3</li>
-            <li class="text-md text-primary"><input type="checkbox"> checkbox 4</li>
-          </ul>
-          <pre>
-            <code class="language-html">
-              &lt;ul class="checkbox-list">
-                &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 1&lt;/li>
-                &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 2&lt;/li>
-                &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 3&lt;/li>
-                &lt;li class="text-md text-primary">&lt;input type="checkbox"> checkbox 4&lt;/li>
-              &lt;/ul>
-            </code>
-          </pre>
-        </div>
-
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Stacked List</h3>
-          <div class="stacked-li">
-            <div class="notification">
-              <figure class="avatar avatar-md">
-                <img src="./images/avatar-md.png" alt="">
-              </figure>
-              <div class="notification-info">
-                <p class="text-primary text-md">John Doe Sent You A Friend Request</p>
-                <p class="text-grey text-sm">5 mins ago</p>
-              </div>
-            </div>
-            <div class="notification">
-              <figure class="avatar avatar-md">
-                <img src="./images/avatar-xs.png" alt="">
-              </figure>
-              <div class="notification-info">
-                <p class="text-primary text-md">John Doe Commented On Your Picture</p>
-                <p class="text-grey text-sm">15 mins ago</p>
-              </div>
-            </div>
-            <div class="notification">
-              <figure class="avatar avatar-md">
-                <img src="./images/avatar-lg.png" alt="">
-              </figure>
-              <div class="notification-info">
-                <p class="text-primary text-md">John Doe Tagged You In A Post</p>
-                <p class="text-grey text-sm">5 mins ago</p>
-              </div>
-            </div>
-          </div>
-          <pre>
-            <code class="language-html">
-              &lt;div class="stacked-li">
-              &lt;div class="notification">
-                &lt;figure class="avatar avatar-md">
-                  &lt;img src="./images/avatar-md.png" alt="">
-                &lt;/figure>
-                &lt;div class="notification-info">
-                  &lt;p class="text-primary text-md">John Doe Sent You A Friend Request&lt;/p>
-                  &lt;p class="text-grey text-sm">5 mins ago&lt;/p>
-                &lt;/div>
-              &lt;/div>
-              &lt;/div>
-            </code>
-          </pre>
-        </div>
-
-      </div>
-      <!-- END List section -->
-
-
-      <!-- START image section -->
-      <div class="section">
-        <h2 class="section-heading">Images</h2>
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Responsive Image</h3>
-          <p>Add the <span class="highlight-text">img-res</span> class to make the image responsive</p>
-          <div>
-            <img class="image-res" src="./images/responsive-image.jpg" alt="">
-          </div>
-          <pre>
-            <code class="language-html">
-              &lt;img class="image-res" src="..." alt="">
-            </code>
-          </pre>
-        </div>
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Round Image</h3>
-          <p>Add the <span class="highlight-text">img-round</span> class to make the image round.</p>
-          <div>
-            <img class="image-round" src="./images/image-round-2.jpg" alt="">
-          </div>
-          <pre>
-            <code class="language-html">
-              &lt;img class="image-round" src="..." alt="">
-            </code>
-          </pre>
-        </div>
-      </div>
-      <!-- END image section  -->
-
-      <!-- START input section  -->
-
-      <div class="section">
-
-        <h2 class="section-heading">Input</h2>
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Standard Input</h3>
-          <div class="input">
-            <input type="text" placeholder="Enter The Text" />
-          </div>
-          <pre>
-            <code class="language-html">
-              &lt;div class="input">
-              &lt;input type="text" placeholder="Enter The Text" />
-              &lt;/div>
-            </code>
-        </div>
-        <div class="sub-section">
-          <h3 class="section-sub-heading">Inputs With Validation</h3>
-          <p>There are 3 types of inputs available depending on the state <span class="highlight-text">
-              input-err</span>,
-            <span class="highlight-text">input-warn </span> and <span class="highlight-text"> input-succ</span>.
-          </p>
-          <div class="input input-err">
-            <input type="text" placeholder="Error..." />
-          </div>
-          <div class="input input-warn">
-            <input type="text" placeholder="Warning..." />
-          </div>
-          <div class="input input-succ">
-            <input type="text" placeholder="Success" />
-          </div>
-          <pre>
-            <code class="language-html">
-
-              //for error input
-               &lt;div class="input input-err">
-                 &lt;input type="text" placeholder="Error..." />
-               &lt;/div>
-
-               //for warning input
-               &lt;div class="input input-warn">
-                 &lt;input type="text" placeholder="Warning..." />
-               &lt;/div>
-
-               //for success input
-               &lt;div class="input input-succ">
-                 &lt;input type="text" placeholder="Success" />
-               &lt;/div>
-            </code>
-        </div>
-      </div>
-      <!-- END input section -->
-
+    </div>
+    <div class="footer">
+      <p class="text-lg align-center">Made With <i class="fa-solid fa-heart"></i> By Athar</p>
     </div>
   </div>
 
