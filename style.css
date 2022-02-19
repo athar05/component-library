@@ -667,9 +667,6 @@ h6 {
 
 /* input section ends */
 
-
-/* componenents page ends */
-
 /* CARD section begins  */
 .card {
   background-color: var(--card-bg);
@@ -786,4 +783,60 @@ h6 {
 
 /* CARD section ends  */
 
+/* nav section starts */
+
+.nav {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--primary);
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  align-items: center;
+  padding: 0 1rem;
+  width: 50%;
+}
+
+.nav-left .search-bar {
+  border-radius: 1rem;
+  border: 1px solid var(--primary);
+  padding-left: 1rem;
+  margin-left: 9rem;
+  height: 2rem;
+  width: 40%;
+  color: var(--primary);
+}
+
+.nav-left .button.button-icon {
+  height: 2.2rem;
+}
+
+.nav img {
+  padding: 1rem 1rem;
+  height: 5rem;
+}
+
+.nav-right i {
+  font-size: 1.6rem;
+  color: var(--primary);
+  transition: 0.3s;
+}
+.nav-right i:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+/* nav section ends */
+
 /* componenents page ends */ ;
+
