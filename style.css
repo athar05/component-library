@@ -597,10 +597,6 @@ h6 {
   right: 0.6rem;
 }
 
-.icon.icon-cart {
-  position: relative;
-}
-
 .badges-icon-images {
   margin: 2rem 0;
   background-color: var(--bg-color);
