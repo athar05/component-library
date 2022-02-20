@@ -852,15 +852,15 @@ h6 {
 }
 
 .card-description.card-text-overlay {
+  width: 100%;
   position: absolute;
-  bottom: 5rem;
+  top: 10rem;
   background-color: var(--bg-color-white);
   opacity: 0.8;
 }
 
 .card-description.card-text-overlay:hover {
   opacity: 0.8;
-  cursor: pointer;
 }
 
 .card.card-with-text {
