@@ -475,7 +475,7 @@ h6 {
   display: flex;
 }
 
-.button-icon {
+.button.button-icon {
   display: flex;
   justify-content: center;
   color: var(--bg-color-white);
@@ -610,7 +610,7 @@ h6 {
   /* font-size: 2.3rem; */
   margin: 0.5rem 1.5rem;
   width: 3rem;
-  height: 4rem;
+  height: auto;
   padding-top: 0.5rem;
 }
 
