@@ -432,13 +432,13 @@ h6 {
 
 .button {
   border-radius: 0.5rem;
-  margin: 1rem 1rem;
+  margin: 0.25rem 0.25rem;
   /* height: 3rem; */
-  /* width: 6rem; */
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
+  min-width: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   background-color: var(--primary);
 }
 .button:hover {
@@ -477,7 +477,7 @@ h6 {
 
 .button-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: var(--bg-color-white);
 }
 
@@ -607,7 +607,7 @@ h6 {
 
 .icon {
   position: relative;
-  font-size: 2.3rem;
+  /* font-size: 2.3rem; */
   margin: 0.5rem 1.5rem;
   width: 3rem;
   height: 4rem;
@@ -848,7 +848,8 @@ h6 {
 
 .card-buttons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-description.card-text-overlay {
