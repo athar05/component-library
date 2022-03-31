@@ -431,7 +431,7 @@ h6 {
 }
 
 .button {
-  border-radius: 0.5rem;
+  border-radius: 0.15rem;
   margin: 0.25rem 0.25rem;
   /* height: 3rem; */
   padding: 0.5rem 0.5rem;
@@ -439,6 +439,7 @@ h6 {
   justify-content: center;
   align-content: center;
   background-color: var(--primary);
+  border: none;
 }
 .button:hover {
   cursor: pointer;
@@ -463,6 +464,10 @@ h6 {
 
 .link-button-components .button.button-primary.button-link {
   text-decoration: none;
+}
+
+.button-link {
+  background-color: var(--primary);
   color: white;
 }
 
@@ -505,6 +510,7 @@ h6 {
   position: absolute;
   bottom: 0;
   left: 0;
+  border: none;
 }
 .floating-action-button:hover {
   border: none;
@@ -606,20 +612,19 @@ h6 {
 
 .icon {
   position: relative;
-  font-size: 2.3rem;
-  margin: 0.5rem 1.5rem;
-  width: 3rem;
-  height: auto;
-  width: 2.5rem;
+  font-size: 2rem;
+  margin: 0 1.25rem;
+  padding: 1.1rem 0.45rem;
+  /* background-color: black; */
 }
 
-.icon-cart > .badge-count {
+.icon > .badge-count {
   top: 0;
   right: 0;
   font-size: 1rem;
 }
 
-.icon-wishlist > .badge-count {
+/* .icon-wishlist > .badge-count {
   top: 0;
   right: 0.6rem;
   font-size: 1rem;
@@ -629,7 +634,7 @@ h6 {
   top: 0.2rem;
   right: 0.7rem;
   font-size: 1rem;
-}
+} */
 /* badge section ends */
 
 /* typography section starts */
@@ -836,6 +841,11 @@ h6 {
   background-color: var(--bg-color-white);
 }
 
+.card-product-details {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card-description p {
   font-weight: 600;
 }
@@ -959,10 +969,11 @@ h6 {
 }
 .card-image-with-badge figure {
   position: absolute;
-  font-size: 1.5rem;
-  color: red;
+  background-color: var(--primary);
+  color: white;
   top: 1rem;
-  right: 1rem;
+  right: 0rem;
+  padding: 0 0.5rem;
 }
 
 /* card rules for card with badge */
