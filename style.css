@@ -154,7 +154,8 @@ a {
 .sidemenu {
   padding: 0.5rem 0.5rem;
   transition: all 300ms ease-in-out;
-  border-top: 1px solid var(--primary);
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* TODO: make mobile menu */
@@ -229,7 +230,8 @@ a {
 
 .main {
   /* padding-right: 5rem; */
-  border-top: 1px solid var(--primary);
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 .main p {
