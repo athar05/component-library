@@ -1186,7 +1186,15 @@
           <h4 class="h4">JavaScript</h4>
           <pre>
             <code class="language-html">
-              &lt;button onclick="showToast()" class="button button-primary">Show Toast &lt;/button>
+              function showToast() {
+                let x = document.getElementById("toast-component");
+
+                x.className = "show";
+                setTimeout(function () {
+                  x.className = x.className.replace("show", "");
+                }, 3000);
+              }
+
             </code>
           </pre>
 
