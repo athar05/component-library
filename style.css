@@ -811,7 +811,7 @@ h6 {
 
 /* CARD section begins  */
 .card {
-  background-color: var(--card-bg);
+  background-color: var(--bg-color-white);
   max-width: 27.5vw;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -923,15 +923,16 @@ h6 {
 
 /* card horizontal image */
 .card.card-horizontal {
+  border: 1px solid black;
   font: inherit;
   /* background-color: red; */
   display: flex;
-  max-width: 90%;
 }
 
 .card.card-horizontal .card-image {
   font: inherit;
-  width: 50%;
+  /* width: 50%; */
+  max-width: 30%;
 }
 
 .card.card-horizontal .card-image img {
@@ -1100,13 +1101,12 @@ h6 {
   }
 
   .card {
-    background-color: var(--card-bg);
     max-width: 100%;
   }
   /* horozontal card */
   .card.card-horizontal {
-    max-width: 100%;
-    width: 100%;
+    max-width: 70%;
+    width: 70%;
   }
 }
 
@@ -1140,13 +1140,12 @@ h6 {
   }
 
   .card {
-    background-color: var(--card-bg);
     max-width: 45%;
   }
   /* horozontal card */
   .card.card-horizontal {
-    max-width: 100%;
-    width: 100%;
+    max-width: 70%;
+    width: 70%;
   }
 }
 
@@ -1175,13 +1174,12 @@ h6 {
   }
 
   .card {
-    background-color: var(--card-bg);
     max-width: 27.5vw;
   }
 
   /* horozontal card */
   .card.card-horizontal {
-    width: 100%;
-    max-width: 100%;
+    width: 70%;
+    max-width: 70%;
   }
 }
