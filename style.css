@@ -1059,6 +1059,48 @@ h6 {
 
 /* Ends section begins */
 
+/* Modal section begins */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--bg-color);
+  border: 1px solid var(--primary);
+  border-radius: 0.25rem;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  position: relative;
+}
+
+/* The Close Button */
+.close {
+  color: var(--primary);
+  position: absolute;
+  top:5px;
+  right: 5px;
+  font-size: 2rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal section ends */
+
+
 /* componenents page ends */
 
 /* mobile devices */
