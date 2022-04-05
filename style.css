@@ -923,9 +923,8 @@ h6 {
 
 /* card horizontal image */
 .card.card-horizontal {
-  border: 1px solid black;
   font: inherit;
-  /* background-color: red; */
+  box-shadow: 0 5px 12px rgb(0 0 0 / 0.3);
   display: flex;
 }
 
@@ -962,7 +961,7 @@ h6 {
 }
 
 .card.card-horizontal .card-buttons .button.button-icon {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
 }
 
 /* card rules for card with badge */
