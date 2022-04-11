@@ -962,6 +962,7 @@ h6 {
 
 .card.card-horizontal .card-buttons .button.button-icon {
   /* background-color: var(--secondary); */
+  font: inherit;
 }
 
 /* card rules for card with badge */
@@ -1058,6 +1059,28 @@ h6 {
 /* Footer section begins */
 
 /* Ends section begins */
+
+/* Toast section begins  */
+#toast-component {
+  visibility: hidden;
+  min-width: 30rem;
+  margin-left: -125px;
+  background-color: var(--bg-color);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#toast-component.show {
+  visibility: visible;
+}
+
+/* Toast section ends  */
 
 /* componenents page ends */
 
