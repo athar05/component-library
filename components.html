@@ -65,11 +65,13 @@
           <p> <a href="#list"> List</a></p>
           <p><a href="#navigation">Navigation</a> </p>
           <p><a href="#typography"> Typography</a></p>
+          <p><a href="#modal"> Modal</a></p>
           <p><a href="#toast"> Toast</a></p>
           <p><a href="#rating"> Rating</a></p>
           <p><a href="#grid"> Grid</a></p>
           <p><a href="#nav-with-drawer"> Nav(Drawer)</a></p>
           <p><a href="#slider"> Slider</a></p>
+
         </div>
       </div>
     </div>
@@ -1171,6 +1173,67 @@
       </div>
 
       <!-- END Typography section -->
+      <!-- START Modal Section  -->
+      <div class="section" id="modal">
+
+
+        <h2 class="section-heading">Modal </h2>
+        <p class="text-lg">A modal box is a scripted effect that allows you to overlay a small element over a website
+        </p>
+        <div class="sub-section">
+          <button class="button button-primary" id="open-modal">Open Modal</button>
+
+          <div id="myModal" class="modal">
+
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p class="text-lg text-primary align-center">You have opened Modal.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <pre>
+              <code class="language-html">
+                &lt;button class="button button-primary" id="open-modal">Open Modal&lt;/button>
+
+                &lt;div id="myModal" class="modal">
+
+                &lt;div class="modal-content">
+                &lt;span class="close">&times;&lt;/span>
+                &lt;p class="text-lg text-primary align-center">You have opened Modal.&lt;/p>
+                &lt;/div>
+
+                &lt;/div>
+              </code>
+            </pre>
+
+        <pre>
+              <code class="language-html">
+
+const modal = document.getElementById("myModal");
+
+const modalButton = document.getElementById("open-modal");
+
+const span = document.getElementsByClassName("close")[0];
+
+modalButton.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+              </code>
+            </pre>
+        <!-- END modal section -->
 
       <!-- START Toast Section -->
       <div class="section" id="toast">
@@ -1415,12 +1478,6 @@
       <script src="./prism/prism.js"></script>
       <script src="https://kit.fontawesome.com/6f5378765c.js" crossorigin="anonymous"></script>
       <script src="./script.js"></script>
-
-      <!-- navbar script -->
-      <script>
-
-      </script>
-
 
 </body>
 
