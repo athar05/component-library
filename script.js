@@ -1,3 +1,4 @@
+
 // START MODAL  SECTION
 
 const modal = document.getElementById("myModal");
@@ -21,3 +22,16 @@ window.onclick = function (event) {
 };
 
 // END MODAL  SECTION
+
+// Start Toast Section
+
+function showToast() {
+  let x = document.getElementById("toast-component");
+
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+}
+
+// End toast section
