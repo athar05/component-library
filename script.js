@@ -10,3 +10,14 @@ function showToast() {
 }
 
 // End toast section
+
+//Start Navbar section
+function handleNavbarDisplay() {
+  var x = document.getElementById("navbar-responsive");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+//End Navbar section
